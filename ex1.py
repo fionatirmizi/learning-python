@@ -56,3 +56,15 @@ print( 'My name is %s'%(my_name))
 print("My name is %s and my dog's name is %s"%(my_name,dog))
 # defining %d to insert numbers (age = 25)
 print("My age is %d and my hair color is %s"%(age,hair_color))
+
+
+# using %r, can insert anything within parathensis 
+sentence = 'my name is %r'
+print("my name is %s"%('Fiona'))
+print(sentence%(25))
+# using Escape characters \n for new line, \t for new tab, adding \ to insert characters
+print('Sunday\\\'s \tMonday\'s\tTuesday\nWednesday')
+print('''Sunday
+Monday
+Tuesday
+''')
