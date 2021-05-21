@@ -22,3 +22,23 @@ count = 10
 # printing name multiple times, can edit name or count later
 print( name , count)
 print( (name + " ")  * count)
+
+
+
+# Conditional statements
+# comparing two values, greater than, lesser than , equal to 
+if(24<5):
+  print("lesser than")
+# a = 24 
+# b = 5
+a = 5 # lesser than test
+b = 24
+string1 = str(a)
+string2 = str(b)
+
+if(a > b):
+  print(string1 + ' is greater than ' +  string2)
+if(a == b):
+  print(string1 + " is equal to " + string2)
+if(a < b):
+  print(string1 + " is lesser than " + string2)
