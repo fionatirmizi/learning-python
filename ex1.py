@@ -42,3 +42,17 @@ if(a == b):
   print(string1 + " is equal to " + string2)
 if(a < b):
   print(string1 + " is lesser than " + string2)
+  
+  
+  my_name = 'Fiona'
+dog = 'Newton'
+age = 25
+height = 155
+hair_color = 'brown'
+
+print( 'My name is ' + my_name)
+# defining %s to insert strings
+print( 'My name is %s'%(my_name))
+print("My name is %s and my dog's name is %s"%(my_name,dog))
+# defining %d to insert numbers (age = 25)
+print("My age is %d and my hair color is %s"%(age,hair_color))
