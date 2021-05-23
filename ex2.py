@@ -29,3 +29,32 @@ print (tabby_cat)
 print (persian_cat)
 print (backslash_cat)
 print (fat_cat)
+
+
+
+#ex11.py in book
+#Using the input() function to ask user for information 
+print ("How old are you?"),
+age = input()
+print ("How tall are you?"),
+height = input()
+print ("how much do you weigh?"),
+weight = input()
+
+print ("So you are %s old, and %s tall, %s heavy" %(age, height, weight))
+#NOTE: Notice that we put a , (comma) at the end of each print line. This is so that
+#print doesn’t end the line with a new line character and go to the next line.
+
+
+# some more input() examples and int(input()) examples
+name = input("whats ur name?")
+print ("Hey!", name)
+
+num = int(input("How old are you?"))
+add = num + 20
+print (add)
+
+#using float function 
+num = float(input("Age?"))
+add = num + 1
+print (add)
