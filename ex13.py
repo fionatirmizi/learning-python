@@ -11,4 +11,12 @@ print ("number 4:", third)
 #you will need to type: python main.py cat dog bird in the shell to run it and assign the script and other 3 variables
 # line 5 unpacks argv so that it gets assined to four variables instead of holding the arguments
 
-
+#27-5-21
+import sys 
+print (sys.argv[2])
+#objective - need to orint name, age, and dogs name in one sentence , 20 times
+#instructions - User will input in shell "python test.py name age dog's_name"
+sentence = "My name is %s, my age is %d, my dog's name is %s.\n"%(sys.argv[1],int(sys.argv[2]),sys.argv[3])
+print(sentence) 
+count = 20
+print(sentence * count)
