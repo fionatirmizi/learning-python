@@ -32,3 +32,8 @@ target.write("\n")
 
 print("And now we close the file...")
 target.close()
+
+
+#I couldve just written all three lines in one go:
+
+target.writelines([line1,"\n",line2,"\n",line3])
