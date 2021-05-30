@@ -21,3 +21,10 @@ print("Alright, done!")
 
 out_file.close()
 in_file.close()
+
+
+#carry out the entire operation in one single line of code, using copyfile function:
+import shutil
+
+shutil.copyfile('17from','17to')
+#here my file names are 17from and 17to 
