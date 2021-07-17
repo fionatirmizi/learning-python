@@ -33,9 +33,18 @@ target.write("\n")
 print("And now we close the file...")
 target.close()
 
-
+------------------------------------
 #I couldve just written all three lines in one go:
 
 target.writelines([line1,"\n",line2,"\n",line3])
 
 Look at Samplefile_ex16 in REPL --> textfile for output
+--------------------------------
+
+I could also write the lines like this:
+
+
+target.writelines(""" %r
+%r
+%r""" % (line1, line2, line3))
+------------------------------------------
