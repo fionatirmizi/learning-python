@@ -5,7 +5,7 @@ script, from_file, to_file = argv
 
 print("Copying from %s to %s"%(from_file, to_file))
 
-#how to write below two lines as one?
+#how to write below two lines as one? ----> indata = open(fromfile).read()
 in_file = open(from_file)
 indata = in_file.read()
 
@@ -20,7 +20,9 @@ out_file.write(indata)
 print("Alright, done!")
 
 out_file.close()
-in_file.close()
+in_file.close() 
+###----> no need to close infile or indata if you wrote above in one line instead of 2
+### because Pyton will close the file after running line 8 
 
 
 #carry out the entire operation in one single line of code, using copyfile function:
