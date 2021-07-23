@@ -34,3 +34,21 @@ def alpha(x):
 alpha(8)
 for num in numbers:
   print(num)
+  
+#----------------------------------------------------------------------
+#STUDY DRILL - add in another variable, so you can change the amount of increments as wekk
+
+numbers = []
+def alpha(x,y):    #----->>>>>>>>>>>>>>>>>>>>> added another variable, to be referenced for increments i += y
+  i = 0
+  while i < x:
+    print("At the top i is %d" % i)
+    numbers.append(i)
+
+    i +=y                       #-------------->  here, added another variable y for increment
+    print("At the bottom i is %d" % i)
+    print("The numbers are: ", numbers)
+
+alpha(8,2)                     #----> calling out with two values assigned to those x,y vairables
+for num in numbers:
+  print(num)
