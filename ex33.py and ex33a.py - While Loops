@@ -1,0 +1,36 @@
+i = 0
+numbers = []
+
+while i < 6:
+  print("At the top i is %d" % i)
+  numbers.append(i)
+
+  i += 1
+  print("Numbers now: ", numbers)
+  print("At the bottom i is %d" % i)
+
+print("The numbers: ", numbers)
+
+for num in numbers:
+  print(num)
+  
+  
+#STUDY DRILL - convert it to a function and assign values from a vairable:
+#-----------------------------------------------------------------------------
+ 
+ex33a.py:
+ 
+numbers = []
+def alpha(x):
+  i = 0
+  while i < x:
+    print("At the top i is %d" % i)
+    numbers.append(i)
+
+    i +=1
+    print("At the bottom i is %d" % i)
+    print("The numbers are: ", numbers)
+
+alpha(8)
+for num in numbers:
+  print(num)
