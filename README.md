@@ -1,23 +1,4 @@
- 
-Skip to content
-fionatirmizi
-/
-learning-python
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-learning-python/ex36.py - Designing and Debugging
-@fionatirmizi
-fionatirmizi Create ex36.py - Designing and Debugging
- 1 contributor
-93 lines (76 sloc)  2.91 KB
-from sys import exit
+ from sys import exit
 
 def wolves():
     print("Now select your weapon of choice.")
@@ -110,16 +91,3 @@ def start():
 
 
 start()
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
