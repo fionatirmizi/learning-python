@@ -5,7 +5,7 @@ def gold_room():
 
   next = input("> ")
   if "0" in next or "1" in next: ###this only lets you enter numbers with 0 or 1 in them. what if I want to enter the number 22 or 35? 
-    how_much = int(next)  #converts a number you entered into an integer
+    how_much = int(next)  #converts a number you entered into an integer.  we assign the string as an integer to a variable. 
 
   else: 
     dead("Man, learn to type a number.")
@@ -73,3 +73,25 @@ def start():  #this is where the game starts.
     dead("You stumble around the room until you starve.")
 
 start()
+#--------------------------------------------------
+# Study DRILL - fixing the bug in function gold_room to be able to take in values more than those containing 0 or 1
+
+def gold_room():
+  print("this room is full of gold. HOw much do you take?")
+
+  next = input("> ")
+  if next.isdigit() == True: ## this checks if the string raw input has only digits in it
+    how_much = int(next)  # we assign the string as an integer to a variable
+  else:
+    print("Not a number.Please enter a number")
+    gold_room()   # I added this again so it takes it back to the start
+    
+  if how_much < 50:
+    print("Nice, you got greedy, you win!")
+    exit(0)
+  else:
+    dead("You greedy bastard!")
+
+
+
+
